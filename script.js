@@ -9,11 +9,13 @@ function displayVinyles(list) {
     card.classList.add("card");
 
     card.innerHTML = `
-      <img src="${v.cover}" alt="${v.title}">
-      <h3>${v.title}</h3>
-      <p>${v.artist}</p>
-      <p>${v.year}</p>
-    `;
+  <a href="vinyle.html?id=${v.id}">
+    <img src="${v.cover}" alt="${v.title}">
+  </a>
+  <h3>${v.title}</h3>
+  <p>${v.artist}</p>
+  <p>${v.year}</p>
+`;
 
     container.appendChild(card);
   });
