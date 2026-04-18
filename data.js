@@ -103,5 +103,21 @@ const vinyles = [
         year: "XVIII - XIX",
         genre: "Classique",
         cover: "https://m.media-amazon.com/images/I/61X1gi1PnvL.jpg"
+    },
+    {
+        id: 14,
+        title: "part I : The Best Of",
+        artist: "C. Aznavour",
+        year: "XXème",
+        genre:"",
+        cover: "https://m.media-amazon.com/images/I/51WjImeMPmL._SX522_.jpg"
+    },
+    {
+        id: 15,
+        title: "part II : The Best Of",
+        artist: "C. Aznavour",
+        year: "XXème",
+        genre:"",
+        cover: "https://m.media-amazon.com/images/I/91Sb0HCGvIL._AC_SX522_.jpg"
     }
 ]
