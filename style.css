@@ -12,10 +12,16 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-.card {
-  width: 200px;
-}
+
 
 .card img {
   width: 100%;
+}
+
+#title {
+  color: black;
+}
+
+#body2{
+    text-align: center;
 }
