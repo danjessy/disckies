@@ -33,7 +33,6 @@ const vinyles = [
     "img/Utopia/Ut3.jpg",
     "img/Utopia/Ut4.jpg",
     "img/Utopia/Ut5.jpg",
-    "img/Utopia/Ut6.jpg",
     "img/Utopia/Ut7.jpg",
     "img/Utopia/Ut8.jpg",
     "img/Utopia/Ut9.jpg",
