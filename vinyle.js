@@ -24,7 +24,6 @@ document.getElementById("genre").textContent =
   "Genre : " + (Array.isArray(vinyle.genre) ? vinyle.genre.join(", ") : vinyle.genre);
 
 
-
 const trackList = document.getElementById("tracks");
 
 vinyle.tracks.forEach(track => {
