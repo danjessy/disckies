@@ -5,15 +5,14 @@ function displayVinyles(list) {
   container.innerHTML = "";
 
   list.forEach(v => {
-    const card = document.createElement("div");
-    card.classList.add("card");
+    const card = document.createElement("a");
+card.classList.add("card");
+card.href = `vinyle.html?id=${v.id}`;
 
     card.innerHTML = `
-  <a href="vinyle.html?id=${v.id}">
-    <img src="${v.cover}" alt="${v.title}">
-  </a>
+  <img src="${v.cover}" alt="${v.title}">
   <h3>${v.title}</h3>
-  <p>${v.artist}</p>
+  <p>${Array.isArray(v.artist) ? v.artist.join(", ") : v.artist}</p>
   <p>${v.year}</p>
 `;
 
