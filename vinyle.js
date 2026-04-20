@@ -33,6 +33,7 @@ vinyle.tracks.forEach(track => {
   trackList.appendChild(li);
 });
 
+
 const gallery = document.getElementById("gallery");
 
 if (vinyle.images) {
