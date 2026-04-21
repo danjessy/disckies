@@ -33,15 +33,25 @@ vinyle.tracks.forEach(track => {
 });
 
 
+const mainImage = document.getElementById("mainImage");
 const gallery = document.getElementById("gallery");
 
-if (vinyle.images) {
-  vinyle.images.forEach(path => {
-    const img = document.createElement("img");
-    img.src = path;
-    img.style.width = "350px";
-    img.style.margin = "5px";
+const allImages = [vinyle.cover, ...(vinyle.images || [])];
 
-    gallery.appendChild(img);
+// image principale
+mainImage.src = vinyle.cover;
+
+// miniatures
+allImages.forEach(path => {
+  const img = document.createElement("img");
+  img.src = path;
+  img.style.width = "80px";
+  img.style.height = "80px";
+  img.style.cursor = "pointer";
+
+  img.addEventListener("click", () => {
+    mainImage.src = path;
   });
-}
+
+  gallery.appendChild(img);
+});
