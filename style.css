@@ -103,7 +103,7 @@ h1 {
   background-attachment: fixed;
 }
 body {
-  animation: fadeIn 2s ease;
+  animation: fadeIn 2.2s ease;
 }
 
 @keyframes fadeIn {
